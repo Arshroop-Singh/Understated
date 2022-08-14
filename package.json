@@ -1,13 +1,25 @@
 {
-  "name": "Secrets",
+  "name": "understated",
   "version": "1.0.0",
-  "description": "",
+  "description": "Share your feeling and thoughts Annonymously",
   "main": "app.js",
+  "keywords": [],
+  "engines": {
+    "node": "16.x"
+  }, 
+  "author": "Arshroop Saini",
+  "license": "ISC",
+ 
+  "scripts": {
+    "devStart": "nodemon app.js"
+  },
+ 
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.18.1",
+    "express-openid-connect": "^2.8.0",
     "express-session": "^1.15.6",
     "mongoose": "^5.4.5",
     "mongoose-findorcreate": "^3.0.0",
@@ -16,11 +28,8 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+
 }
